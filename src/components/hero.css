@@ -1,0 +1,37 @@
+.services-section-heading {
+  letter-spacing: 0.07em;
+
+  background: linear-gradient(180deg, #ffffff 0%, rgba(0, 252, 255, 0.8) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .services-section-heading,
+  .services-section-text,
+  .services-section-heading-2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .services-section-heading {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .servicesContent {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .serviceContainer {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .servicesContent {
+    width: 90vw;
+  }
+}

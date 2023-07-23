@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <body>
+    <body className=' font-Archivo'>
       <Home />
       </body>
     </>
