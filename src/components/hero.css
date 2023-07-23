@@ -19,6 +19,15 @@
   .services-section-heading {
     font-size: 2em;
   }
+  .servicesContent{
+    width: 100vw !important;
+  }
+  .servicesImage{
+    width: 100vw !important;
+  }
+  .services-section-heading {
+    font-size: 2.5em !important;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -28,10 +37,5 @@
   }
   .serviceContainer {
     margin-top: 20px;
-  }
-}
-@media screen and (max-width: 560px) {
-  .servicesContent {
-    width: 90vw;
   }
 }
