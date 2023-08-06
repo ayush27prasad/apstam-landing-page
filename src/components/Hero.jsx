@@ -4,7 +4,7 @@ import "./hero.css";
 
 function BodyTemplate(props) {
   return (
-    <div className="serviceContainer flex flex-wrap-reverse w-full min-h-[460px] items-center justify-around ">
+    <div className="serviceContainer flex flex-wrap-reverse w-full min-h-screen items-center justify-around ">
       <div className="servicesContent w-[50%] flex flex-col">
         <h1 className="font-semibold text-black services-section-heading text-6xl ml-12">
           {props.heading}
