@@ -1,24 +1,23 @@
 import React from "react";
 import wrench from "../assets/wrench.png";
+import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   return (
     <>
-      <div>
+      <div >
         <header>
           <div className="container flex justify-between">
             <div className="flex pl-3 sm:pl-10 items-center">
-              <img src={wrench} className="h-9 mr-4" />
-              <div className="logo font-Archivo text-4xl">
-                Apstam
-              </div>
+              <img src={logo} className="h-12 mr-4 mt-2" />
             </div>
             <button
               id="contactBtn"
-              className="bg-blue-900 hover:bg-blue-600 hover:shadow-btnGlow text-white font-bold py-2 px-4 rounded-full"
+              className="bg-blackbg-white text-black hover:bg-black hover:text-gray-50 font-semibold py-1 px-4  shadow "
             >
               Contact Us
             </button>
+            
           </div>
         </header>
       </div>

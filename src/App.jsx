@@ -6,9 +6,9 @@ function App() {
 
   return (
     <>
-    <body className=' font-Archivo'>
-      <Home />
-      </body>
+    <body className='font-Ubuntu'>
+      <Home/>
+    </body>
     </>
   )
 }
