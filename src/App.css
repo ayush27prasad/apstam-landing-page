@@ -23,16 +23,12 @@ button {
   background-color: #ffffff; 
   color: #fff;
   border-width: 1px;
-  border-color: #000000;
   border-radius: 0px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.5s ease; 
 }
 
-button:hover {
-  background-color: #000000; 
-  border-color: #000000;
-}
+
 
 main {
   position: relative;
@@ -73,9 +69,10 @@ textarea {
   margin-bottom: 1rem;
   padding: 0.5rem;
   border: 1px solid #ffffff;
-  border-radius: 0px;
-  background-color: #1a1a1a;
+  border-radius: 2px;
+  background-color: #f2f2f2;
   color: #fff;
+  transition-duration: 200ms;
 }
 
 button[type="submit"] {
@@ -138,16 +135,16 @@ button[type="submit"]:hover {
 input:hover,
 textarea:hover {
   background-color: #ffffff;
-  border-color: #000000;
-  border-radius: 0px;
+  border-color: #155e75;
+  border-radius: 6px;
 }
 
 
 input:active,
 textarea:active {
   background-color: #ffffff;
-  border-color: #000000;
-  border-radius: 0px;
+  border-color: #155e75;
+  border-radius: 6px;
 }
 
 #contactBtn {

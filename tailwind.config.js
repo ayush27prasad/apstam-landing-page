@@ -27,7 +27,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'theme-purple': '#B51A8A',
-        'retechgen-blue': '#1B8DA6',
+        'retechgen-blue': 'rgb(21 94 117 / var(--tw-text-opacity))',
         'theme-gray': 'rgba(0, 0, 0, 0.39)',
         'theme-gray2': 'rgba(0, 0, 0, 0.75)',
         'theme-blue': 'rgba(27, 141, 166, 0.85)',
@@ -36,7 +36,7 @@ module.exports = {
         'theme-hover-blue': 'rgba(34, 157, 184, 1)',
         'theme-hover-search': 'rgba(43, 59, 83, 0.68)',
         'theme-bg': '#F8F9FA',
-        'theme-blue-text': '#1F2347',
+        'theme-blue-text': '#061148',
         'theme-partner': 'rgba(242, 242, 242, 0.4)',
 
         // rgba(43, 59, 83, 0.68)

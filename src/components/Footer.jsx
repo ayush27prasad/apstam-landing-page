@@ -17,10 +17,13 @@ function Footer() {
             <img className=" h-13 m-4" src={Retechgen_Logo} alt="Logo" />
           </div>
           <div className="text">
-            <p className="text-[#1F2347]/70 font-medium text-sm p-3">
-              Known For Best In Class, reliable and prompt IT consulting,
-              software development, design services, custom products, mobility
-              and cloud operations with end-to-end customization.
+            <p className="text-[#1F2347]/70 font-medium text-md p-3">
+              Founded by <a>Kanav Sharma</a> <br />
+              Contact :{" "}
+              <a href="https://www.linkedin.com/in/kanav-sharma-2a6713226/">
+                Linkedln{" "}
+              </a>
+              |<a href="mailto:example@gmail.com"> Mail</a>
             </p>
           </div>
         </div>
@@ -30,15 +33,9 @@ function Footer() {
             <div className="flex flex-col items-center h-1 w-24 bg-[#1B8DA6] mt-2"></div>
           </div>
           <div className="text w-56">
-            <p className="text-[#1F2347]/70 font-medium text-sm p-3 leading-7">
-              D-2 204, Atul First Gate <br /> Valsad, Gujrat. <br /> Pin: 396020
-              India
-            </p>
-            <p className="text-[#1F2347]/70 font-medium text-sm py-2 px-3">
-              support@retechgen.com
-            </p>
-            <p className="text-[#1F2347] font-semibold text-sm py-1 px-3">
-              (+91) 9307675497
+            <p className="text-[#1F2347]/70 font-medium text-md p-3 leading-7">
+              T-5, Technology Business Incubator, KIET
+              <br /> Ghaziabad, Uttar Pradesh, India <br /> PIN: 201206
             </p>
           </div>
         </div>
@@ -100,7 +97,6 @@ function Footer() {
                 <li className=" hover:text-retechgen-blue cursor-pointer">
                   <img src={startinup} />
                 </li>
-
                 <li className=" hover:text-retechgen-blue cursor-pointer">
                   <img src={startindia} />
                 </li>
@@ -111,9 +107,13 @@ function Footer() {
       </footer>
 
       <div className="h-05 w-full bg-[#000000]/20 mt-14"></div>
-      <h2 className="text-[#1F2347]/70 my-4 font-semibold text-sm  flex justify-around">
-        Retechgen @2022 - All rights reserved
+      <h2 className="text-[#1F2347]/70 my-2 font-semibold text-lg  flex justify-around">
+        APSTAM @2023 - All rights reserved
+        <br />
       </h2>
+      <p className="text-[#1F2347]/70 my-2 text-xs  flex justify-around">
+        Made with ❤️ by Skill Eliters
+      </p>
     </>
   );
 }
