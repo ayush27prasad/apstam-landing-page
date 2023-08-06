@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <div >
         <header>
-          <div className="container flex justify-between">
+          <div className=" w-full flex justify-between">
             <div className="flex pl-3 sm:pl-10 items-center">
               <img src={logo} className="h-12 mr-4 mt-2" />
             </div>
