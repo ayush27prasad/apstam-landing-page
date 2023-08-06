@@ -28,10 +28,6 @@ const Hero = () => {
   return (
     <>
       <div className="flex flex-wrap-reverse">
-        {/* <div class="product-info">
-          <h1 className="font-Archivo">Impact wrenches</h1>
-          <p>Description of your impact wrenches goes here...</p>
-        </div> */}
         <BodyTemplate
           heading="Impact Wrench"
           text="Maximize your impact, minimize your effort!"
@@ -40,11 +36,7 @@ const Hero = () => {
       </div>
       <section className="flex flex-wrap justify-evenly xs:py-10 sm:py-14 bg-gray-50 xs:rounded-[4rem] sm:rounded-[8rem] m-1">
         <div className="flex-col m-10 p-10 xs:mt-0 sm:mt-12">
-          {/* <Fade top> */}
           <div>
-            {/* <p className=" font-semibold text-theme-purple text-sm">
-                Why our products?
-              </p> */}
             <h1 className="font-bold text-cyan-800 text-6xl">
               <p className=" text-black inline-block">Our</p> Products
               <div className="flex flex-col items-center h-1.5 mr-20 bg-[#061148] mt-2"></div>
@@ -62,21 +54,9 @@ const Hero = () => {
               Detail4
             </p>
           </div>
-          {/* </Fade> */}
-
-          {/* <Fade bottom> */}
-          {/* <Link to="/contact"> */}
-          {/* <button className="xs:mt-10 sm:mt-36 hover:bg-retechgen-blue flex h-12 w-36 bg-theme-blue text-white rounded-2xl text-sm shadow-button_shadow">
-                <p className=" self-center m-auto font-semibold">
-                  Get in Touch
-                </p>
-              </button> */}
-          {/* </Link> */}
-          {/* </Fade> */}
         </div>
 
         <div className="flex relative w-132 flex-wrap xs:mx-[8rem] sm:mx-0">
-          {/* <Fade right> */}
           <div className="xs:-mt-[2.6rem] sm:mt-0 flex-col flex-wrap">
             <div className="flex flex-wrap w-52 h-52 bg-white rounded-lg shadow-card_shadow2 hover:border-2 hover:border-solid hover:border-retechgen-blue/70 hover:transition hover:duration-300 hover:ease-in-out m-10 hover:shadow-tile_hover_shadow">
               <div className="flex-col m-auto  ">
@@ -96,9 +76,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          {/* </Fade> */}
 
-          {/* <Fade right> */}
           <div className="flex-col sm:absolute xs:-mt-10 sm:mt-0 sm:bottom-12  sm:left-70 xs:flex-wrap">
             <div className="flex w-52 h-52 bg-white rounded-lg shadow-card_shadow2 hover:border-2 hover:border-solid hover:border-retechgen-blue/70 hover:transition hover:duration-300 hover:ease-in-out m-10 hover:shadow-tile_hover_shadow">
               <div className="flex-col m-auto  ">
@@ -118,7 +96,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          {/* </Fade> */}
         </div>
       </section>
     </>
