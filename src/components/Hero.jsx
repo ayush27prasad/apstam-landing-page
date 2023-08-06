@@ -9,7 +9,7 @@ import fatigue from "../assets/zero_fatigue.png";
 
 function BodyTemplate(props) {
   return (
-      <div className="serviceContainer flex flex-wrap-reverse w-full min-h-screen items-center justify-around ">
+      <div className="serviceContainer flex flex-wrap-reverse w-full min-h-[80vh] items-center justify-around ">
         <div className="servicesContent w-[50%] flex flex-col">
           <h1 className="font-semibold text-center text-black services-section-heading text-6xl">
             {props.heading}
@@ -19,7 +19,7 @@ function BodyTemplate(props) {
           </p>
         </div>
         <div className="servicesImage w-[50%] h-[19rem] flex justify-center">
-          <img src={props.gif} className=" w-[70%] h-full" alt="" />
+          <img src={props.gif} className=" xs:w-[70%] md:w-[45%] h-full" alt="" />
         </div>
       </div>
   );

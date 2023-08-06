@@ -55,13 +55,13 @@ main {
 .product-info p {
   font-size: 1.2rem;
 }
-
+/* 
 footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   background-color: #000000;
-}
+} */
 
 .footer-left form {
   display: flex;
@@ -92,17 +92,17 @@ button[type="submit"]:hover {
   border-radius: 0;
 }
 
-footer .footer-right {
+/* footer .footer-right {
   display: flex;
   align-items: flex-start;
-}
+} */
 
-footer .supported-images img {
+/* footer .supported-images img {
   width: auto;
   height: 40%;
   max-width: 40%;
  
-}
+} */
 
 .social-icons a {
   color: #fff;
