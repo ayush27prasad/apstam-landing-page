@@ -7,6 +7,23 @@
   -webkit-text-fill-color: transparent;
 }
 
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust this height to fit your design */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop the video to fit the container without distorting it */
+  z-index: -1; /* Ensure the video stays behind other content */
+}
+
 @media screen and (max-width: 768px) {
   .services-section-heading,
   .services-section-text,

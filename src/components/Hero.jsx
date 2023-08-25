@@ -5,11 +5,16 @@ import time from "../assets/save_time.png";
 import effort from "../assets/minimal_effort.png";
 import portability from "../assets/portability.png";
 import fatigue from "../assets/zero_fatigue.png";
+import vector_left from "../assets/vectors/leftVector.svg";
+import rvector_left from "../assets/vectors/rooundLeftDocked.svg";
+
 // import Fade from "react-reveal/Fade";
 
 function BodyTemplate(props) {
   return (
-    <div className="serviceContainer flex flex-wrap-reverse w-full min-h-[80vh] items-center justify-around ">
+    <div className="serviceContainer relative flex flex-wrap-reverse w-full min-h-[80vh] items-center justify-around ">
+      <img src={vector_left} className=" absolute top-[650px] right-0 h-[60%]"/>
+      <img src={rvector_left} className=" absolute top-2 left-0 h-[90%]"/>
       <div className="servicesContent w-[50%] flex flex-col">
         <h1 className="font-semibold text-center text-black services-section-heading text-6xl">
           {props.heading}
@@ -34,7 +39,7 @@ const Hero = () => {
           gif={wrench_gif}
         />
       </div>
-      <section className="flex flex-wrap justify-evenly xs:py-10 sm:py-14 bg-gray-50 xs:rounded-[4rem] sm:rounded-[8rem] m-1">
+      <section className="flex flex-wrap justify-evenly xs:py-10 sm:py-14 bg-transparent xs:rounded-[4rem] sm:rounded-[8rem] m-1">
         <div className="flex-col m-10 p-10 xs:mt-0 sm:mt-12">
           <div>
             <h1 className="font-bold text-cyan-800 text-6xl">
@@ -44,14 +49,13 @@ const Hero = () => {
             <h2 className="text-cyan-700 font-medium mt-8 text-4xl">
               Impact Wrench
             </h2>
-            <p className="text-black font-medium mt-4 ml-4 text-xl">
-              Detail1
-              <br />
-              Detail1
-              <br />
-              Detail3
-              <br />
-              Detail4
+            <p className="text-black font-medium text-sm mt-6  ml-6">
+              ◎20x32 ''
+              <br /> ◎electric 12 V
+              <br /> ◎20x32 ''
+              <br /> ◎electric 12 V
+              <br /> ◎20x32 ''
+              <br /> ◎electric 12 V
             </p>
           </div>
         </div>

@@ -6,7 +6,7 @@ import Touch_call from "../assets/touch_call.svg";
 function Contact() {
   return (
     <section
-      className="relative bg-theme-bg  bg-gray-50 xs:rounded-[4rem] sm:rounded-[8rem] m-1 mb-2"
+      className="relative bg-transparent  xs:rounded-[4rem] sm:rounded-[8rem] m-1 mb-2"
       id="contact-section"
     >
       <div className="flex-col">
@@ -28,7 +28,7 @@ function Contact() {
         </div>
 
         <div className="flex-col md:ml-40 xl:ml-20 pt-5 sm:m-16 xs:mt-96 sm:mt-8 md:w-150 lg:w-160 sm:h-128 xs:h-150 bg-white shadow-form_shadow relative ">
-          <div className=" bg-cyan-800 w-70 h-80 rounded-3xl flex flex-col justify-center absolute sm:-left-36 sm:top-24 xs:left-13 xs:-top-88">
+          <div className=" bg-cyan-700 w-70 h-80 rounded-3xl flex flex-col justify-center absolute sm:-left-36 sm:top-24 xs:left-13 xs:-top-88">
             <div className="flex-col ">
               <div className="ml-5 my-10 flex h-7">
                 <img src={Touch_gps} alt="" />

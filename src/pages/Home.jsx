@@ -12,7 +12,7 @@ const Home = () => {
                 <Navbar />
                 <Hero/>
                 <Contact />
-                <Footer />
+                <Footer/>
             </div>
 
         </>

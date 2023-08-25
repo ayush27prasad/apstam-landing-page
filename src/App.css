@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background-color: #ffffff;
   color: #ffffff;
+  background: linear-gradient(to bottom, white 25%, #5c8a96 100%);
 }
 
 header {
@@ -9,9 +9,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border-color: #000000;
+  border-color: #757575;
   background-color: #ffffff40;
 }
+
+
 
 .logo {
   font-size: 1.5rem;

@@ -5,34 +5,31 @@ import effort from "../assets/minimal_effort.png";
 import portability from "../assets/portability.png";
 import fatigue from "../assets/zero_fatigue.png";
 const Product = () => {
-    return (
-      <>
-        <section className="flex flex-wrap justify-evenly xs:py-10 sm:py-14 bg-[#EBE9EB]/30 xs:rounded-[3.5rem] sm:rounded-[4rem]">
-      <div className="flex-col m-10 p-10 xs:mt-0 sm:mt-12">
+  return (
+    <>
+      <section className="flex flex-wrap justify-evenly xs:py-10 sm:py-14 bg-transparent xs:rounded-[3.5rem] sm:rounded-[4rem]">
+        <div className="flex-col m-10 p-10 xs:mt-0 sm:mt-12">
           <div>
-            <p className=" font-semibold text-blue-950 text-sm">
-              Our Products
-            </p>
+            <p className=" font-semibold text-blue-950 text-sm">Our Products</p>
             <h2 className="font-bold text-black text-4xl">
               <p className=" text-retechgen-blue inline-block">Impact</p>{" "}
-                {" "}
               <p className=" text-retechgen-blue inline-block">Wrench</p>{" "}
             </h2>
             <h2 className="text-black font-medium text-lg mt-6 ml-2">
-              Product Description 
+              Product Description
             </h2>
             <p className="text-black font-medium text-sm mt-6  ml-6">
-                     ◎20x32 ''
-              <br/>  ◎electric 12 V
-              <br/>  ◎20x32 ''
-              <br/>  ◎electric 12 V
-              <br/>  ◎20x32 ''
-              <br/>  ◎electric 12 V
+              ◎20x32 ''
+              <br /> ◎electric 12 V
+              <br /> ◎20x32 ''
+              <br /> ◎electric 12 V
+              <br /> ◎20x32 ''
+              <br /> ◎electric 12 V
             </p>
           </div>
-      </div>
-  
-      <div className="flex relative w-132 flex-wrap xs:mx-[8rem] sm:mx-0">
+        </div>
+
+        <div className="flex relative w-132 flex-wrap xs:mx-[8rem] sm:mx-0">
           <div className="xs:-mt-[2.6rem] sm:mt-0 flex-col flex-wrap">
             <div className="flex flex-wrap w-52 h-52 bg-white rounded-lg shadow-card_shadow2 hover:border-2 hover:border-solid hover:border-black hover:transition hover:duration-300 hover:ease-in-out m-10 hover:shadow-tile_hover_shadow">
               <div className="flex-col m-auto  ">
@@ -42,14 +39,10 @@ const Product = () => {
                 </h2>
               </div>
             </div>
-  
+
             <div className="flex flex-wrap w-52 h-52 bg-white rounded-lg shadow-card_shadow2 hover:border-2 hover:border-solid hover:border-black hover:transition hover:duration-300 hover:ease-in-out m-10 hover:shadow-tile_hover_shadow">
               <div className="flex-col m-auto  ">
-                <img
-                  className="m-auto mb-5 w-10"
-                  src={effort}
-                  alt=""
-                />
+                <img className="m-auto mb-5 w-10" src={effort} alt="" />
                 <h2 className="mb-4 text-center text-theme-blue-text font-medium text-lg">
                   Minimal Effort
                 </h2>
@@ -66,7 +59,7 @@ const Product = () => {
                 </h2>
               </div>
             </div>
-  
+
             <div className="flex w-52 h-52 bg-white rounded-lg shadow-card_shadow2 hover:border-2 hover:border-solid hover:border-black hover:transition hover:duration-300 hover:ease-in-out m-10 hover:shadow-tile_hover_shadow">
               <div className="flex-col m-auto  ">
                 <img className="m-auto mb-5 w-10" src={portability} alt="" />
@@ -76,10 +69,10 @@ const Product = () => {
               </div>
             </div>
           </div>
-      </div>
-    </section>
-      </>
-    );
-  };
+        </div>
+      </section>
+    </>
+  );
+};
 
-  export default Product;
+export default Product;
