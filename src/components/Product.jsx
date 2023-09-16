@@ -5,6 +5,7 @@ import effort from "../assets/minimal_effort.png";
 import portability from "../assets/portability.png";
 import fatigue from "../assets/zero_fatigue.png";
 const Product = () => {
+  
   return (
     <>
       <section className="flex flex-wrap justify-evenly xs:py-10 sm:py-14 bg-transparent xs:rounded-[3.5rem] sm:rounded-[4rem]">
@@ -15,7 +16,9 @@ const Product = () => {
               <p className=" text-retechgen-blue inline-block">Impact</p>{" "}
               <p className=" text-retechgen-blue inline-block">Wrench</p>{" "}
             </h2>
-            <h2 className="text-black font-medium text-lg mt-6 ml-2">
+            
+            
+            {/* <h2 className="text-black font-medium text-lg mt-6 ml-2">
               Product Description
             </h2>
             <p className="text-black font-medium text-sm mt-6  ml-6">
@@ -25,7 +28,7 @@ const Product = () => {
               <br /> ◎electric 12 V
               <br /> ◎20x32 ''
               <br /> ◎electric 12 V
-            </p>
+            </p> */}
           </div>
         </div>
 

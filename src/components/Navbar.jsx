@@ -1,6 +1,6 @@
 import React from "react";
 import wrench from "../assets/wrench.png";
-import logo from "../assets/logo.svg";
+import logo from "../assets/apstamLogo.png";
 
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
         <header className=" shadow-md">
           <div className=" w-full flex justify-between">
             <div className="flex pl-3 sm:pl-10 items-center">
-              <img src={logo} className="h-12 mr-4 mt-2" />
+              <img src={logo} className="h-16 mr-4 mt-0 " />
             </div>
             <button
               id="contactBtn"

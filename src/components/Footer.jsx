@@ -1,5 +1,5 @@
 import React from "react";
-import Retechgen_Logo from "../assets/logo.svg";
+import Retechgen_Logo from "../assets/apstamLogo.png";
 import Facebook from "../assets/instagram.png";
 import LinkedIn from "../assets/linkedin.png";
 import Twitter from "../assets/twitter.png";
@@ -13,7 +13,7 @@ function Footer() {
       <footer className=" flex justify-around  flex-wrap m-3 mt-14 pt-10  ">
         <div className=" w-[19rem] h-60">
           <div className="logo">
-            <img className=" h-13 m-4" src={Retechgen_Logo} alt="Logo" />
+            <img className=" h-18 m-2 filter invert" src={Retechgen_Logo} alt="Logo" />
           </div>
           <div className="text">
             <p className="text-white font-normal text-md p-3">
@@ -22,7 +22,7 @@ function Footer() {
               <a href="https://www.linkedin.com/in/kanav-sharma-2a6713226/">
                 Linkedln{" "}
               </a>
-              |<a href="mailto:example@gmail.com"> Mail</a>
+              |<a href="mailto:kanavs302@gmail.com"> Mail</a>
             </p>
           </div>
         </div>
@@ -47,17 +47,17 @@ function Footer() {
           <div className=" w-44 mt-7 socials">
             <ul className="flex justify-around ">
               <li className="filter invert  p-1 rounded-[50%] cursor-pointer">
-                <a href="https://www.facebook.com/retechgen" target="_blank">
+                <a href="https://www.instagram.com/apstamtechnologies/" target="_blank">
                   <img className="px-0 h-8" src={Facebook} alt="Facebook" />
                 </a>
               </li>
               <li className="filter invert  p-1 rounded-[50%] cursor-pointer">
-                <a href="https://www.linkedin.com/company/retechgen/">
+                <a href="https://www.linkedin.com/in/kanav-sharma-2a6713226/">
                   <img className="px-0 h-8" src={LinkedIn} alt="LinkedIn" />
                 </a>
               </li>
               <li className="filter invert  p-1 rounded-[50%] cursor-pointer">
-                <a href="https://twitter.com/retechgen">
+                <a href="https://www.instagram.com/apstamtechnologies/">
                   <img className="px-0 h-8" src={Twitter} alt="Twitter" />
                 </a>
               </li>

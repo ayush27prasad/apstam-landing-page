@@ -7,29 +7,48 @@ import portability from "../assets/portability.png";
 import fatigue from "../assets/zero_fatigue.png";
 import vector_left from "../assets/vectors/leftVector.svg";
 import rvector_left from "../assets/vectors/rooundLeftDocked.svg";
+import ReactPlayer from "react-player";
+import { useRef } from "react";
+import { useLayoutEffect } from "react";
+import { useState } from "react";
 
 // import Fade from "react-reveal/Fade";
 
 function BodyTemplate(props) {
   return (
     <div className="serviceContainer relative flex flex-wrap-reverse w-full min-h-[80vh] items-center justify-around ">
-      <img src={vector_left} className=" absolute top-[650px] right-0 h-[60%]"/>
-      <img src={rvector_left} className=" absolute top-2 left-0 h-[90%]"/>
+      <img
+        src={vector_left}
+        className=" absolute top-[650px] z-10 right-0 h-[60%]"
+      />
+      <img src={rvector_left} className=" absolute top-2 left-0 h-[90%]" />
       <div className="servicesContent w-[50%] flex flex-col">
-        <h1 className="font-semibold text-center text-black services-section-heading text-6xl">
+        <p className="font-semibold text-center z-20 text-black services-section-heading font-sans text-7xl">
           {props.heading}
-        </h1>
-        <p className="services-section-text mt-6 text-center text-black tracking-wide text-xl w-[90%] mx-auto">
+        </p>
+        <p className="services-section-text mt-5 font-sans text-center text-black tracking-wide text-2xl w-[90%] mx-auto">
           {props.text}
         </p>
       </div>
-      <div className="servicesImage w-[50%] h-[19rem] flex justify-center">
-        <img src={props.gif} className=" xs:w-[70%] md:w-[45%] h-full" alt="" />
+      <div className="servicesImage w-[50%] h-[19rem] md:h-[29rem] flex justify-center">
+        <img src={props.gif} className=" xs:w-[70%] md:w-[50%] h-full" alt="" />
       </div>
     </div>
   );
 }
 const Hero = () => {
+  const ref = useRef(null);
+  const [width,setWidth] = useState(0);
+  useLayoutEffect(() => {
+    setWidth(ref.current.offsetWidth);
+  },[])
+  const videoLink = "https://youtu.be/XQ1Nr-GtKGA?si=kX2ZypRosyyHHX-j";
+  let newHeight;
+  if (width >= 768) {
+    // newHeight = Math.round((width - width * 0.3) * (9/16));
+    newHeight = width;
+  } else newHeight = width; 
+  // newHeight = Math.round(width * (9/16));
   return (
     <>
       <div className="flex flex-wrap-reverse">
@@ -41,22 +60,36 @@ const Hero = () => {
       </div>
       <section className="flex flex-wrap justify-evenly xs:py-10 sm:py-14 bg-transparent xs:rounded-[4rem] sm:rounded-[8rem] m-1">
         <div className="flex-col m-10 p-10 xs:mt-0 sm:mt-12">
-          <div>
+          <div ref={ref}>
             <h1 className="font-bold text-cyan-800 text-6xl">
-              <p className=" text-black inline-block">Our</p> Products
+              <p className=" text-black inline-block">Our </p> Products
               <div className="flex flex-col items-center h-1.5 mr-20 bg-[#061148] mt-2"></div>
             </h1>
-            <h2 className="text-cyan-700 font-medium mt-8 text-4xl">
+            {/* <h2 className="text-cyan-700 font-medium mt-8 text-4xl">
               Impact Wrench
-            </h2>
-            <p className="text-black font-medium text-sm mt-6  ml-6">
+            </h2> */}
+            <ReactPlayer
+              url={videoLink}
+              stopOnUnmount
+              playing={false}
+              controls
+              playIcon={false}
+              pip={false}
+              muted={false}
+              width={null}
+              height={`${newHeight}px`}
+              className={`transition_class [&>video]:rounded-2xl mt-4 ${
+                `!h-[${newHeight}px]`
+              }`}
+            />
+            {/* <p className="text-black font-medium text-sm mt-6  ml-6">
               ◎20x32 ''
               <br /> ◎electric 12 V
               <br /> ◎20x32 ''
               <br /> ◎electric 12 V
               <br /> ◎20x32 ''
               <br /> ◎electric 12 V
-            </p>
+            </p> */}
           </div>
         </div>
 
