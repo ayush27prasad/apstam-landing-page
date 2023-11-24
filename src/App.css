@@ -4,6 +4,13 @@ body {
   background: linear-gradient(to bottom, white 25%, #5c8a96 100%);
 }
 
+
+.font-Ubuntu {
+  font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important; */
+  /* Add any other font-related styles here */
+}
+
 header {
   display: flex;
   justify-content: space-between;

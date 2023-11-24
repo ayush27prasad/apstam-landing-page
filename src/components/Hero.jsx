@@ -23,10 +23,10 @@ function BodyTemplate(props) {
       />
       <img src={rvector_left} className=" absolute top-2 left-0 h-[90%]" />
       <div className="servicesContent w-[50%] flex flex-col">
-        <p className="font-semibold text-center z-20 text-black services-section-heading font-sans text-7xl">
+        <p className="font-semibold text-center z-20 text-black services-section-heading  text-7xl">
           {props.heading}
         </p>
-        <p className="services-section-text mt-5 font-sans text-center text-black tracking-wide text-2xl w-[90%] mx-auto">
+        <p className="services-section-text mt-5  text-center text-black tracking-wide text-2xl w-[90%] mx-auto">
           {props.text}
         </p>
       </div>

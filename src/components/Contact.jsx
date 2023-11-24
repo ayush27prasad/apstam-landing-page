@@ -74,23 +74,23 @@ function Contact() {
         </div>
 
         <div className="flex-col md:ml-40 xl:ml-20 pt-5 sm:m-16 xs:mt-96 sm:mt-8 md:w-150 lg:w-160 sm:h-128 xs:h-150 bg-white shadow-form_shadow relative ">
-          <div className=" bg-cyan-700 w-80 h-80 rounded-3xl flex flex-col justify-center absolute sm:-left-36 sm:top-24 xs:left-13 xs:-top-88">
+          <div className=" bg-cyan-700 w-80 h-80 rounded-3xl flex flex-col justify-center absolute sm:-left-36 sm:top-24 xs:left-13 xs:-top-88" >
             <div className="flex-col ">
-              <div className="ml-5 my-10 flex h-7">
+              <div className="ml-4 my-10 flex h-7">
                 <img src={Touch_gps} alt="" />
                 <h2 className="ml-3 text-white font-medium">
                   Delhi-NCR, India
                 </h2>
               </div>
 
-              <div className="ml-5 my-10 flex h-7">
+              <div className="ml-4 my-10 flex h-7">
                 <img className="h-5" src={Touch_mail} alt="" />
-                <h2 className="ml-3 text-white font-medium">
+                <h2 className="ml-2 text-white font-medium">
                   apstamtechnologies@gmail.com
                 </h2>
               </div>
 
-              <div className="ml-5 my-10 flex h-7">
+              <div className="ml-4 my-10 flex h-7">
                 <img src={Touch_call} alt="" />
                 <h2 className="ml-3 text-white font-medium">+91 78899 18706</h2>
               </div>
