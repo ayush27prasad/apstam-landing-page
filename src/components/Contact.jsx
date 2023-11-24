@@ -1,9 +1,55 @@
-import React from "react";
+import React,{useState} from "react";
 import Touch_gps from "../assets/touch_gps.svg";
 import Touch_mail from "../assets/touch_mail.svg";
 import Touch_call from "../assets/touch_call.svg";
+import { firebaseApp, firestoreDb } from "../firebase";
+import { collection, addDoc } from "firebase/firestore";
+
 
 function Contact() {
+  const formElement  = document.getElementById("contact-form");  
+  const [formData, setFormData] = useState({
+      f_name: "",
+      l_name: "",
+      number: "",
+      email: "",
+      message: "",
+    });
+
+
+  const handleSendClick = async (e) => {
+    e.preventDefault();
+    if (!formData.f_name || !formData.l_name || !formData.email || !formData.number || !formData.message) {
+      alert("Please fill in all fields." );
+    }
+    else{
+      try {
+        const formDataCollection = collection(firestoreDb, "apstamContactDetails");
+        await addDoc(formDataCollection, formData);
+        alert("Thanks for connecting, Your message has been received!");
+        setFormData({
+          f_name: "",
+          l_name: "",
+          number: "",
+          email: "",
+          message: "",
+        });
+      } catch (error) {
+        console.error("Error submitting form data:", error);
+        alert("Error connecting. Please try again later.");
+      }
+    }
+    
+  };
+
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
   return (
     <section
       className="relative bg-transparent  xs:rounded-[4rem] sm:rounded-[8rem] m-1 mb-2"
@@ -51,13 +97,15 @@ function Contact() {
             </div>
           </div>
 
-          <form className=" xs:ml-16 xs:mr-16 sm:mr-0 sm:ml-48 mt-8 xs:w-90 sm:w-128 flex column-2 flex-wrap">
+          <form id="contact-form" className=" xs:ml-16 xs:mr-16 sm:mr-0 sm:ml-48 mt-8 xs:w-90 sm:w-128 flex column-2 flex-wrap">
             <input
               className="m-4 p-3 h-12 w-52 text-theme-gray2 font-medium border-[#1B8DA64F] border-solid border-2 rounded-md outline-1 outline-[#1b8da694] bg-[#EEEEEE7A]"
               type="text"
               placeholder="First Name"
               name="f_name"
               id="f_name"
+              value={formData.f_name}
+              onChange={handleChange}
             />
 
             <input
@@ -66,6 +114,8 @@ function Contact() {
               placeholder="Last Name"
               name="l_name"
               id="l_name"
+              value={formData.l_name}
+              onChange={handleChange}
             />
 
             <input
@@ -74,6 +124,8 @@ function Contact() {
               placeholder="Mobile Number"
               name="number"
               id="number"
+              value={formData.number}
+              onChange={handleChange}
             />
 
             <input
@@ -82,6 +134,8 @@ function Contact() {
               placeholder="Email"
               name="email"
               id="email"
+              value={formData.email}
+              onChange={handleChange}
             />
 
             <textarea
@@ -89,10 +143,12 @@ function Contact() {
               name="message"
               id="message"
               placeholder="Enter Your Message"
+              value={formData.message}
+              onChange={handleChange}
             ></textarea>
 
-            <button className="mt-4 ml-4 hover:bg-cyan-900 flex h-12 w-36 bg-cyan-700 text-white rounded-3xl text-md ">
-              <p className=" self-center m-auto font-semibold">Send</p>
+            <button  onClick={handleSendClick} className="mt-4 ml-4 hover:bg-cyan-900 flex h-12 w-36 bg-cyan-700 text-white rounded-3xl text-md ">
+              <p className=" self-center m-auto text-lg font-semibold">Send</p>
             </button>
           </form>
         </div>
@@ -100,5 +156,4 @@ function Contact() {
     </section>
   );
 }
-
 export default Contact;
